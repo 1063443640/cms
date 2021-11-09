@@ -1,12 +1,9 @@
 <template>
   <view>
     <u-swiper :list="imageList" mode="none"></u-swiper>
-    <uni-view
-      data-v-7b038a67=""
-      class="u-swiper-title u-line-1"
-      style="padding-bottom: 6px"
-      >{{ content }}</uni-view
-    >
+    <div class="u-swiper-title u-line-1" style="padding-bottom: 6px">
+      {{ content }}
+    </div>
     <view class="form">
       <view class="inputTitle">京东联盟ID</view>
       <u-input
@@ -164,6 +161,20 @@ export default {
     font-size: 30rpx;
     font-weight: bold;
   }
+}
+.u-swiper-title {
+  background-color: rgba(0, 0, 0, 0.3);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 14px;
+  padding: 6px 12px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.u-line-1 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .cms {
   margin-top: 30rpx;
